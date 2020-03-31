@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Vsevolod Shabashov](https://up.htmlacademy.ru/adaptive/19/user/1158659).
-* Наставник: `Неизвестно`.
+* Наставник: [Женя Прядко](https://htmlacademy.ru/profile/id598141).
 
 ---
 
