@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Form</title>
 </head>
 <body>
@@ -10,23 +11,22 @@
   			<img src="" alt="" class="page-header__logo-img" width="102" height="82">
   		</a>
   		<nav class="main-nav">
-  			<button class="main-nav__toggle">Открыть меню</button>
-  			<div class="main-nav__wrapper">
-  				<ul class="main-nav__list site-list">
-	  				<li class="site-list__item site_list__item--active">
-	  					<a>Главная</a>
-	  				</li>
-	  				<li class="site-list__item">
-	  					<a href="#">Фото и видео</a>
-	  				</li>
-	  				<li class="site-list__item">
-	  					<a href="#">Форма отзыва</a>
-	  				</li>
-	  				<li class="site-list__item">
-	  					<a href="#">HTML Academy</a>
-	  				</li>
-	  			</ul>
-  			</div>
+  			<button type="button" class="main-nav__toggle-close"></button>
+  			<button type="button" class="main-nav__toggle-open">Открыть меню</button>
+			<ul class="main-nav__list site-menu">
+				<li class="site-list__item site_list__item--active">
+					<a>Главная</a>
+				</li>
+				<li class="site-list__item">
+					<a href="#">Фото и видео</a>
+				</li>
+				<li class="site-list__item">
+					<a href="#">Форма отзыва</a>
+				</li>
+				<li class="site-list__item">
+					<a href="#">HTML Academy</a>
+				</li>
+			</ul>
   		</nav>
   	</header>
 
@@ -40,22 +40,20 @@
   		<div class="page-footer__hashtag hashtag">
   			<p class="hashtag__text">#VISITSEDONA</p>
   		</div>
-  		<div class="page-footer__social social">
-  			<ul class="social__list">
-  				<li class="social__item">
-  					<a href="https://vk.com/htmlacademy" class="social__link social__link--twitter">Мы в твитере</a>
-  				</li>
-  				<li class="social__item">
-  					<a href="https://vk.com/htmlacademy" class="social__link social__link--facebook">Мы в фейсбук</a>
-  				</li>
-  				<li class="social__item">
-  					<a href="https://vk.com/htmlacademy" class="social__link social__link--youtube">Мы на ютуб</a>
-  				</li>
-  			</ul>
-  		</div>
+		<ul class="social__list">
+			<li class="social__item">
+				<a href="https://vk.com/htmlacademy" class="social__link social__link--twitter">Мы в твитере</a>
+			</li>
+			<li class="social__item">
+				<a href="https://vk.com/htmlacademy" class="social__link social__link--facebook">Мы в фейсбук</a>
+			</li>
+			<li class="social__item">
+				<a href="https://vk.com/htmlacademy" class="social__link social__link--youtube">Мы на ютуб</a>
+			</li>
+		</ul>
   		<div class="page-footer__copyright copyright">
   			<p class="copyright__text">Разработано</p>
-  			<a href="#" class="copyright__link"></a>
+  			<a href="https://up.htmlacademy.ru/adaptive/19" class="copyright__link"></a>
   		</div>
   	</footer>
 </body>

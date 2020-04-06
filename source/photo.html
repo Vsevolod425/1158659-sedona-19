@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Photo and Video</title>
 </head>
 <body>
@@ -10,52 +11,52 @@
   			<img src="" alt="" class="page-header__logo-img" width="102" height="82">
   		</a>
   		<nav class="main-nav">
-  			<button class="main-nav__toggle">Открыть меню</button>
-  			<div class="main-nav__wrapper">
-  				<ul class="main-nav__list site-list">
-	  				<li class="site-list__item site_list__item--active">
-	  					<a>Главная</a>
-	  				</li>
-	  				<li class="site-list__item">
-	  					<a href="#">Фото и видео</a>
-	  				</li>
-	  				<li class="site-list__item">
-	  					<a href="#">Форма отзыва</a>
-	  				</li>
-	  				<li class="site-list__item">
-	  					<a href="#">HTML Academy</a>
-	  				</li>
-	  			</ul>
-  			</div>
+  			<button type="button" class="main-nav__toggle-close"></button>
+  			<button type="button" class="main-nav__toggle-open">Открыть меню</button>
+			<ul class="main-nav__list site-menu">
+				<li class="site-list__item site_list__item--active">
+					<a>Главная</a>
+				</li>
+				<li class="site-list__item">
+					<a href="#">Фото и видео</a>
+				</li>
+				<li class="site-list__item">
+					<a href="#">Форма отзыва</a>
+				</li>
+				<li class="site-list__item">
+					<a href="#">HTML Academy</a>
+				</li>
+			</ul>
   		</nav>
   	</header>
 
 	<main class="page-main">
-
-		<h1 class="visually-hidden">Photo and Video</h1>
-		
 		<section class="gallery">
-			<h2 class="gallery__intro">Фото и видео</h2>
+			<h1 class="gallery__title">Фото и видео</h1>
 			<p class="gallery__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
 			<ul class="gallery__list">
 				<li class="gallery__item">
-					<h3 class="gallery__title">Неродные просторы</h3>
-					<p class="gallery__autor">Автор фото: Борис</p>
+					<img src="https://via.placeholder.com/280x280" width="280" height="280" alt="">
+					<h3 class="gallery__name">Неродные просторы</h3>
+					<p class="gallery__author">Автор фото: Борис</p>
 					<p class="gallery__like">1350</p>
 				</li>
 				<li class="gallery__item">
-					<h3 class="gallery__title">Местная ростительность</h3>
-					<p class="gallery__autor">Автор фото: Сергей</p>
+					<img src="https://via.placeholder.com/280x280" width="280" height="280" alt="">
+					<h3 class="gallery__name">Местная ростительность</h3>
+					<p class="gallery__author">Автор фото: Сергей</p>
 					<p class="gallery__like">143</p>
 				</li>
 				<li class="gallery__item">
-					<h3 class="gallery__title">Дорога на север</h3>
-					<p class="gallery__autor">Автор фото: Петр</p>
+					<img src="https://via.placeholder.com/280x280" width="280" height="280" alt="">
+					<h3 class="gallery__name">Дорога на север</h3>
+					<p class="gallery__author">Автор фото: Петр</p>
 					<p class="gallery__like">96</p>
 				</li>
 				<li class="gallery__item">
-					<h3 class="gallery__title">Мост дьявола</h3>
-					<p class="gallery__autor">Автор фото: Антон</p>
+					<img src="https://via.placeholder.com/280x280" width="280" height="280" alt="">
+					<h3 class="gallery__name">Мост дьявола</h3>
+					<p class="gallery__author">Автор фото: Антон</p>
 					<p class="gallery__like">254</p>
 				</li>
 			</ul>
@@ -66,22 +67,20 @@
   		<div class="page-footer__hashtag hashtag">
   			<p class="hashtag__text">#VISITSEDONA</p>
   		</div>
-  		<div class="page-footer__social social">
-  			<ul class="social__list">
-  				<li class="social__item">
-  					<a href="https://vk.com/htmlacademy" class="social__link social__link--twitter">Мы в твитере</a>
-  				</li>
-  				<li class="social__item">
-  					<a href="https://vk.com/htmlacademy" class="social__link social__link--facebook">Мы в фейсбук</a>
-  				</li>
-  				<li class="social__item">
-  					<a href="https://vk.com/htmlacademy" class="social__link social__link--youtube">Мы на ютуб</a>
-  				</li>
-  			</ul>
-  		</div>
+		<ul class="social__list">
+			<li class="social__item">
+				<a href="https://vk.com/htmlacademy" class="social__link social__link--twitter">Мы в твитере</a>
+			</li>
+			<li class="social__item">
+				<a href="https://vk.com/htmlacademy" class="social__link social__link--facebook">Мы в фейсбук</a>
+			</li>
+			<li class="social__item">
+				<a href="https://vk.com/htmlacademy" class="social__link social__link--youtube">Мы на ютуб</a>
+			</li>
+		</ul>
   		<div class="page-footer__copyright copyright">
   			<p class="copyright__text">Разработано</p>
-  			<a href="#" class="copyright__link"></a>
+  			<a href="https://up.htmlacademy.ru/adaptive/19" class="copyright__link"></a>
   		</div>
   	</footer>
 </body>
