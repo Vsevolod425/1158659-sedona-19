@@ -1,3 +1,5 @@
+@import "vars.less";
+@import "default.less";
 @import "blocks/advantages.less";
 @import "blocks/causes.less";
 @import "blocks/copyright.less";
@@ -10,33 +12,3 @@
 @import "blocks/reason.less";
 @import "blocks/site-menu.less";
 @import "blocks/social.less";
-
-@base-color: #81b3d2;
-
-body {
-    font-family: 'PT Sans', sans-serif;
-    font-size: 14px;
-    line-height: 21px;
-    text-transform: uppercase;
-}
-h2 {
-    font-size: 18px;
-    line-height: 26px;
-}
-a {
-    text-decoration: none;
-}
-.visually_hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
