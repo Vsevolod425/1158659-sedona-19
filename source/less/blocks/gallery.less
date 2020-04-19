@@ -1,5 +1,68 @@
 .gallery {
+  &__list {
+    padding: 0;
+    list-style: none;
+  }
+
   &__like {
     font-weight: 700;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .gallery {
+    padding: 0 58px;
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      width: 325px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      text-align: left;
+
+      &--first {
+        width: 650px;
+      }
+    }
+
+    &__img {
+      width: 650px;
+    }
+
+    &__wrapper {
+      padding-left: 20px;
+    }
+
+    &__like {
+      padding-right: 20px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .gallery {
+    padding: 0;
+
+    &__info {
+      width: 440px;
+      margin: 0 auto;
+    }
+
+    &__item {
+      width: 400px;
+
+        &--first {
+        width: 1200px;
+      }
+    }
+
+    &__img {
+      width: 1200px;
+    }
   }
 }
