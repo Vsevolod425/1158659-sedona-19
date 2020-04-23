@@ -1,10 +1,70 @@
 .reason {
   &__header {
+    padding: 25px 20px;
     background-color: @base-color;
     color: #ffffff;
   }
 
   &__list {
     list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__item {
+    padding: 25px 20px;
+  }
+
+  &__item--mod {
+    padding: 0;
+  }
+
+  &__title {
+    margin-top: 0;
+  }
+
+  &__description {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .reason {
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      width: 245px;
+      padding: 40px 45px;
+
+      &--mod {
+        width: auto;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+      }
+    }
+
+    &__header {
+      width: 256px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reason {
+    &__item {
+      width: 400px;
+
+      &--mod {
+        width: 1200px;
+      }
+    }
+
+    &__header {
+      width: 400px;
+    }
   }
 }

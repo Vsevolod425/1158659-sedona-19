@@ -1,4 +1,7 @@
 .site-menu {
+  padding: 0;
+  margin: 0;
+
   &__link {
     font-weight: 700;
     text-transform: uppercase;
@@ -10,5 +13,21 @@
     border-bottom: 1px solid #678fa8;
     border-top: 1px solid #9ac2db;
     background-color: #81b3d2;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .site-menu {
+    display: flex;
+    justify-content: space-between;
+
+    &__link {
+      color: #000000;
+    }
+
+    &__item {
+      background-color: #ffffff;
+      border: none;
+    }
   }
 }
