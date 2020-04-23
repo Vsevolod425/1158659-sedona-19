@@ -11,7 +11,6 @@
 
 @media (min-width: @tablet-width) {
   .gallery {
-    padding: 0 58px;
 
     &__list {
       display: flex;
@@ -19,22 +18,23 @@
     }
 
     &__item {
-      width: 325px;
+      width: 369px;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
       text-align: left;
 
       &--first {
-        width: 650px;
+        width: 100%;
       }
     }
 
     &__img {
-      width: 650px;
+      width: 100%;
     }
 
     &__wrapper {
+      width: auto;
       padding-left: 20px;
     }
 
@@ -54,7 +54,7 @@
     }
 
     &__item {
-      width: 400px;
+      width: calc(100% / 3);
 
       &--first {
         width: 1200px;
