@@ -1,4 +1,41 @@
 .main-nav {
+position: relative;
+  &__toggle-close {
+    position: absolute;
+    top: 7%;
+    right: 5%;
+    width: 25px;
+    height: 25px;
+    padding: 0;
+    cursor: pointer;
+    border: none;
+    background-color: rgba(225, 225, 225, 0);
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        top: 11px;
+        left: -4px;
+        width: 27px;
+        height: 4px;
+        background-color: #ffffff;
+      }
+
+      &::before {
+        transform: rotate(45deg);
+      }
+
+      &::after {
+        transform: rotate(-45deg);
+      }
+
+      &:hover::before,
+      &:hover::after {
+        background-color: #cde1ed;
+      }
+  }
+
   &__list {
     list-style: none;
   }

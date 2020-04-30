@@ -1,21 +1,34 @@
 .causes {
-  padding: 40px 25px;
+  padding: 25px 25px 30px 25px;
 
   &__title {
     font-weight: 700;
+  }
+
+  &__text {
+    margin-top: 25px;
   }
 }
 
 @media (min-width: @tablet-width) {
   .causes {
-    padding: 40px 140px;
+    padding: 31px 135px 35px;
+    &__title {
+      font-size: 21px;
+      letter-spacing: 0.005em;
+    }
+
+    &__text {
+      margin-top: 28px;
+      letter-spacing: 0.005em;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
   .causes {
     width: 510px;
-    padding: 45px 0;
+    padding: 32px 0;
     margin: 0 auto;
   }
 }

@@ -1,6 +1,6 @@
 .reason {
   &__header {
-    padding: 25px 20px;
+    padding: 39px 20px;
     background-color: @base-color;
     color: #ffffff;
   }
@@ -12,19 +12,28 @@
   }
 
   &__item {
-    padding: 25px 20px;
-  }
+    padding: 18px 31px;
+      &--mod {
+        min-height: 250px;
+        padding: 0;
+      }
 
-  &__item--mod {
-    padding: 0;
+      &--color {
+        background-color: @second-color;
+      }
   }
 
   &__title {
-    margin-top: 0;
+    margin: 0;
+  }
+
+  &__description-number {
+    margin: 5px 0 15px 0;
   }
 
   &__description {
-    margin-bottom: 0;
+    margin: 0;
+    line-height: 21px;
   }
 }
 
@@ -36,9 +45,8 @@
     }
 
     &__item {
-      width: 245px;
-      padding: 40px 45px;
-
+      width: 256px;
+      padding: 40px 48px;
       &--mod {
         width: auto;
         display: flex;
@@ -49,6 +57,15 @@
 
     &__header {
       width: 256px;
+      padding: 46px 45px;
+    }
+
+    &__title {
+      font-size: 21px;
+    }
+
+    &__description-number {
+      margin: 7px 0 19px;
     }
   }
 }
@@ -57,14 +74,23 @@
   .reason {
     &__item {
       width: 400px;
+      padding: 43px 48px;
 
       &--mod {
         width: 1200px;
+        padding: 0;
       }
     }
 
     &__header {
       width: 400px;
+      height: 256px;
+      padding: 56px 55px 46px;
+    }
+
+    &__title {
+      width: 126px;
+      margin: 0 auto;
     }
   }
 }

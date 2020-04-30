@@ -1,27 +1,54 @@
 .page-header {
   display: flex;
   flex-direction: column;
-  &__toggle-open {
-    border: none;
-    background-color: rgba(225, 225, 225, 0);
+  &__content {
+    position: relative;
+    order: 2;
+    padding-top: 55px;
+    fill: @base-color;
   }
 
-  &__content {
-    order: 2;
+  &__logo {
+    position: absolute;
+    top: 0;
+    left: 34%;
+    z-index: 2;
+  }
+
+  &__toggle-open {
+    position: absolute;
+    top: 25%;
+    right: 4%;
+    cursor: pointer;
+    border: none;
+    background-color: rgba(225, 225, 225, 0);
   }
 }
 
 @media (min-width: @tablet-width) {
   .page-header {
+    position: relative;
     &__content {
+      position: static;
+      padding: 0;
+    }
+
+    &__logo {
       position: absolute;
       top: 0;
-      left: 50%;
-      margin-left: -51px;
+      left: 43.2%;
     }
 
     &__toggle-open {
       display: none;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    &__logo {
+      left: 45.6%;
     }
   }
 }
