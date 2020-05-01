@@ -12,6 +12,12 @@
     border-top: 1px solid #e5e5e5;
   }
 
+  &__content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
   &__title {
     font-size: 18px;
     margin: 38px 0 26px 0;
@@ -148,11 +154,41 @@
     }
 
     &__item {
+      position: relative;
+      min-height: 267px;
       width: calc(100% / 3);
 
       &--first {
+        height: auto;
         width: 1200px;
       }
+    }
+
+    &__content {
+      position: absolute;
+      bottom: 0;
+      min-height: 80px;
+      padding: 13px 21px;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    &__wrapper {
+      padding-left: 0;
+      color: #ffffff;
+    }
+
+    &__name {
+      margin: 4px 0 0;
+    }
+
+    &__author {
+      margin: 0;
+    }
+
+    &__like {
+      margin: 0 10px 0 0;
+      color: #ffffff;
+      fill: #ffffff;
     }
 
     &__img {
