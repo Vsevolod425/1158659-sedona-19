@@ -21,12 +21,20 @@
     min-height: 158px;
   }
 
+  &--form {
+    min-height: 158px;
+  }
+
   &__triangle {
     width: 100%;
     position: absolute;
     bottom: -8px;
     left: 0;
     z-index: 5;
+
+    &--reason {
+      top: 166px;
+    }
   }
 }
 
@@ -42,6 +50,10 @@
     &__img {
       width: 60%;
       margin-top: -5px;
+    }
+
+    &__triangle {
+      display: none;
     }
   }
 }
