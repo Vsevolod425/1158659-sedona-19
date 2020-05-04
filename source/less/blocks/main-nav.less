@@ -16,19 +16,19 @@
     &::after {
       content: "";
       position: absolute;
-      top: 11px;
-      left: -4px;
+      top: 50%;
+      left: 50%;
       width: 27px;
       height: 4px;
       background-color: #ffffff;
     }
 
     &::before {
-      transform: rotate(45deg);
+      transform: translate(-50%, -50%) rotate(45deg);
     }
 
     &::after {
-      transform: rotate(-45deg);
+      transform: translate(-50%, -50%) rotate(-45deg);
     }
 
     &:hover::before,

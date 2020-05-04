@@ -1,8 +1,15 @@
 .reason {
   &__header {
-    padding: 39px 20px;
+    height: 210px;
+    padding: 55px 20px 20px;
     background-color: @base-color;
     color: #ffffff;
+
+    &--second {
+      height: 190px;
+      padding: 36px 20px 20px;
+      margin-top: 0;
+    }
   }
 
   &__list {
@@ -30,7 +37,7 @@
   }
 
   &__description-number {
-    margin: 5px 0 15px 0;
+    margin: 7px 0 15px 0;
   }
 
   &__description {
@@ -47,7 +54,7 @@
     }
 
     &__item {
-      width: 256px;
+      width: calc(100% / 3);
       padding: 40px 48px;
 
       &--mod {
