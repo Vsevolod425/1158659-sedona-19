@@ -1,11 +1,12 @@
 .reason {
   &__header {
+    position: relative;
     height: 210px;
     padding: 56px 20px 20px;
     background-color: @base-color;
     color: #ffffff;
 
-    &--second {
+    &--height {
       height: 190px;
       padding: 38px 20px 20px;
       margin-top: 0;
@@ -43,6 +44,15 @@
   &__description {
     margin: 0;
     line-height: 21px;
+  }
+
+  &__triangle {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 5;
+    transform: translate(-50%);
   }
 }
 
