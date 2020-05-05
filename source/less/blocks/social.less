@@ -2,13 +2,31 @@
   display: flex;
   justify-content: center;
   padding: 0;
-  margin: 35px 0;
+  margin: 35px 0 29px 0;
 
   &__item {
-    width: 48px;
-    height: 48px;
     list-style: none;
-    font-size: 0;
-    background-color: #81b3d2;
+    margin-right: 6px;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 46px;
+    height: 48px;
+    cursor: pointer;
+    background-color: @base-color;
+    fill: #ffffff;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .social {
+    margin: 32px 29px;
+
+    &__item {
+      margin-right: 6px;
+    }
   }
 }

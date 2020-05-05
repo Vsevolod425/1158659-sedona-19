@@ -1,23 +1,38 @@
 .page-header {
   display: flex;
   flex-direction: column;
-  &__toggle-open {
-    border: none;
-    background-color: rgba(225, 225, 225, 0);
-  }
 
   &__content {
-    order: 2;
+    position: relative;
+    padding-top: 55px;
+  }
+
+  &__logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%);
+  }
+
+  &__toggle-open {
+    position: absolute;
+    top: 25%;
+    right: 4%;
+    cursor: pointer;
+    border: none;
+    background-color: rgba(225, 225, 225, 0);
+    fill: @base-color;
   }
 }
 
 @media (min-width: @tablet-width) {
   .page-header {
+    position: relative;
+
     &__content {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      margin-left: -51px;
+      position: static;
+      padding: 0;
     }
 
     &__toggle-open {
