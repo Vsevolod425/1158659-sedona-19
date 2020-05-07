@@ -55,8 +55,86 @@
         </div>
     </section>
 
-    <h1 class="visually-hidden">Form</h1>
-    
+    <h1 class="visually_hidden">Form</h1>
+
+    <section class="feedback">
+      <h2 class="feedback__title">Оставьте свой отзыв</h2>
+      <p class="feedback__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+    </section>
+
+    <section class="Introduce">
+      <h2 class="Introduce__title">Представьтесь:</h2>
+      <form class="Introduce__user" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label for="Introduce__name">Имя:</label>
+          <input id="Introduce__name" type="text" name="name" placeholder="Петр">
+        </p>
+        <p>
+          <label for="Introduce__surname">Фамилия:</label>
+          <input id="Introduce__surname" type="text" name="surname" placeholder="Иванов">
+        </p>
+        <p>
+          <label for="Introduce__patronymic">Отчество:</label>
+          <input id="Introduce__patronymic" type="text" name="patronymic" placeholder="Александрович">
+        </p>
+      </form>
+    </section>
+
+    <section class="contact">
+      <h2 class="contact__title">Контактная информация:</h2>
+      <form class="contact__info" action="https://echo.htmlacademy.ru" method="post">
+        <label for="contact__phone">Контактный телефон:</label><br>
+        <input id="contact__phone" type="text" name="phone" placeholder="Введите телефон"><br>
+        <label for="contact__email">Электронная почта:</label><br>
+        <input id="contact__email" type="email" name="email" placeholder="Введите e-mail">
+      </form>
+    </section>
+
+    <section class="impression">
+      <h2 class="impression__title">Ваше Общее впечатление:</h2>
+      <ul class="impression__list">
+        <li class="impression__item">
+          <input type="radio" name="user_review" id="positively" value="filter-positively">
+          <label for="positively">Скорее положительное</label>
+        </li>
+        <li class="impression__item">
+          <input type="radio" name="user_review" id="negatively" value="filter-negatively">
+          <label for="negatively">Скорее отрицательное</label>
+        </li>
+        <li class="impression__item">
+          <input type="radio" name="user_review" id="neutral" value="filter-neutral">
+          <label for="neutral">Затрудняюсь ответить</label>
+        </li>
+      </ul>
+    </section>
+
+    <section class="visit">
+      <h2 class="visit__title">Посещенные достопримечательности:</h2>
+      <ul class="visit__list">
+        <li class="visit__item">
+          <input type="checkbox" name="bridge" id="filter-bridge" checked>
+          <label for="filter-bridge">Мост Дьявола</label>
+        </li>
+        <li class="visit__item">
+          <input type="checkbox" name="mount" id="filter-mount" checked>
+          <label for="filter-mount">Гора-Колокол</label>
+        </li>
+        <li class="visit__item">
+          <input type="checkbox" name="slide" id="filter-slide" checked>
+          <label for="filter-slide">Слайд-парк</label>
+        </li>
+        <li class="visit__item">
+          <input type="checkbox" name="red" id="filter-red">
+          <label for="red">Красные скалы</label>
+        </li>
+      </ul>
+    </section>
+
+    <section class="emotion">
+      <h2 class="emotion__title">Опишите свои эмоции:</h2>
+      <textarea name="message" id="emotion__place" placeholder="Опишите подробно все свои восторги"></textarea><br>
+      <button class="emotion__btn" type="submit">Отправить отзыв</button>
+    </section>
   </main>
 
   <footer class="page-footer">
