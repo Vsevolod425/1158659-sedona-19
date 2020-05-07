@@ -57,7 +57,7 @@
 
   &__menu {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     min-height: 65px;
     width: 100%;
@@ -66,15 +66,9 @@
     margin-bottom: 47px;
     background-color: #f2f2f2;
     fill: #5c6870;
-
-    &--subtitles {
-      margin-right: 30px;
+    &--replay {
+      margin-right: auto;
     }
-  }
-
-  &__menu-settings {
-    display: flex;
-    align-items: center;
 
     &--subtitles {
       margin-right: 15px;
@@ -108,6 +102,9 @@
       padding: 0 40px 0 34px;
       fill: #ffffff;
       background-color: rgba(0, 0, 0, 0.6);
+      &--subtitles {
+        margin-right: 30px;
+      }
     }
 
     &__time-line {
@@ -116,12 +113,6 @@
       transform: translate(0);
       padding: 44px 0;
       background-color: rgba(0, 0, 0, 0);
-    }
-
-    &__menu-settings {
-      &--subtitles {
-        margin-right: 31px;
-      }
     }
 
     &__scale {
@@ -139,7 +130,6 @@
   .video {
     width: 66.6%;
     margin-top: 4px;
-    
     &__wrapper {
       padding: 55px 190px;
     }
