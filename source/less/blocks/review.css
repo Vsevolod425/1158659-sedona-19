@@ -1,0 +1,33 @@
+.review {
+  margin-top: 38px;
+  padding: 0 19px;
+}
+.review__feedback-title {
+  margin-bottom: 26px;
+}
+.review__feedback-text {
+  line-height: 24px;
+}
+.review__introduce {
+  min-height: 306px;
+  margin-top: 36px;
+}
+.review__introduce-user {
+  padding: 0;
+  list-style: none;
+  text-align: left;
+}
+.review__introduce-item {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+.review__introduce-name {
+  margin-right: 20px;
+}
+.review__introduce-field {
+  width: 100%;
+  font-size: 18px;
+  padding: 17px;
+  background-color: ;
+}
