@@ -55,8 +55,87 @@
         </div>
     </section>
 
-    <h1 class="visually-hidden">Form</h1>
-    
+    <h1 class="visually_hidden">Form</h1>
+
+    <form action="https://echo.htmlacademy.ru" class="review">
+        <div class="review__feedback">
+          <h2 class="review__feedback-title">Оставьте свой отзыв</h2>
+          <p class="review__feedback-text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        </div>
+        <div class="review__introduce">
+          <h2 class="review__introduce-title">Представьтесь:</h2>
+          <ul class="review__introduce-user">
+            <li class="review__introduce-item">
+              <label class="review__introduce-name" for="introduce__name">Имя:</label>
+              <input class="review__introduce-field" id="introduce__name" type="text" name="name" placeholder="Петр">
+            </li>
+            <li class="review__introduce-item">
+              <label class="review__introduce-name" for="introduce__surname">Фамилия:</label>
+              <input class="review__introduce-field" id="introduce__surname" type="text" name="surname" placeholder="Иванов">
+            </li>
+            <li class="review__introduce-item">
+              <label class="review__introduce-name" for="introduce__patronymic">Отчество:</label>
+              <input class="review__introduce-field" id="introduce__patronymic" type="text" name="patronymic" placeholder="Александрович">
+            </li>
+          </ul>
+        </div>
+        <div class="review__contact">
+          <h2 class="review__contact-title">Контактная информация:</h2>
+          <ul class="review__contact-info">
+            <li class="review__contact-item">
+              <label class="review__contact-name" for="contact__phone">Контактный телефон:</label>
+              <input class="review__contact-field" id="contact__phone" type="text" name="phone" placeholder="Введите телефон">
+            </li>
+            <li class="form__contact-item">
+              <label class="review__contact-name" for="contact__email">Электронная почта:</label>
+              <input class="review__contact-field" id="contact__email" type="email" name="email" placeholder="Введите e-mail">
+            </li>
+          </ul>
+        </div>
+        <div class="review__impression">
+          <h2 class="review__impression-title">Ваше Общее впечатление:</h2>
+          <ul class="review__impression-list">
+            <li class="review__impression-item">
+              <input type="radio" name="user_review" id="positively" value="filter-positively">
+              <label for="positively">Скорее положительное</label>
+            </li>
+            <li class="review__impression-item">
+              <input type="radio" name="user_review" id="negatively" value="filter-negatively">
+              <label for="negatively">Скорее отрицательное</label>
+            </li>
+            <li class="review__impression-item">
+              <input type="radio" name="user_review" id="neutral" value="filter-neutral">
+              <label for="neutral">Затрудняюсь ответить</label>
+            </li>
+          </ul>
+        </div>
+        <div class="review__visit">
+          <h2 class="review__visit-title">Посещенные достопримечательности:</h2>
+          <ul class="review__visit-list">
+            <li class="review__visit-item">
+              <input type="checkbox" name="bridge" id="filter-bridge" checked>
+              <label for="filter-bridge">Мост Дьявола</label>
+            </li>
+            <li class="review__visit-item">
+              <input type="checkbox" name="mount" id="filter-mount" checked>
+              <label for="filter-mount">Гора-Колокол</label>
+            </li>
+            <li class="review__visit-item">
+              <input type="checkbox" name="slide" id="filter-slide" checked>
+              <label for="filter-slide">Слайд-парк</label>
+            </li>
+            <li class="review__visit-item">
+              <input type="checkbox" name="red" id="filter-red">
+              <label for="red">Красные скалы</label>
+            </li>
+          </ul>
+        </div>
+        <div class="review__emotion">
+          <h2 class="review__emotion-title">Опишите свои эмоции:</h2>
+          <textarea name="message" id="emotion__place" placeholder="Опишите подробно все свои восторги"></textarea><br>
+          <button class="review__emotion-btn" type="submit">Отправить отзыв</button>
+        </div>
+      </form>
   </main>
 
   <footer class="page-footer">
