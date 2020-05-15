@@ -66,21 +66,27 @@
     margin-bottom: 47px;
     background-color: #f2f2f2;
     fill: #5c6870;
+
     &--replay {
       margin-right: auto;
-      display: flex;
-      align-items: center;
     }
 
     &--subtitles {
       margin-right: 15px;
-      display: flex;
-      align-items: center;
+    }
+  }
+
+  &__menu-icon {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    &:hover {
+      fill: #333333;
     }
 
-    &--fullscreen {
-      display: flex;
-      align-items: center;
+    &:active {
+      fill: #b8b8b8;
     }
   }
 }
@@ -111,8 +117,19 @@
       padding: 0 40px 0 34px;
       fill: #ffffff;
       background-color: rgba(0, 0, 0, 0.6);
+
       &--subtitles {
         margin-right: 30px;
+      }
+    }
+
+    &__menu-icon {
+      &:hover {
+        fill: #c2c2c2;
+      }
+
+      &:active {
+        fill: #949494;
       }
     }
 

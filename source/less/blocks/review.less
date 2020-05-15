@@ -46,9 +46,20 @@
     border: none;
     color: #000000;
     background-color: @form-color;
+    font-family: "PT Sans", sans-serif;
 
     &::placeholder {
       color: #000000;
+    }
+
+    &:hover {
+      background-color: #e5e5e5;
+    }
+
+    &:focus {
+      background-color: #ffffff;
+      border: 5px solid #e5e5e5;
+      padding: 15px;
     }
   }
 
@@ -67,38 +78,49 @@
     padding: 0;
   }
 
-  &__contact-item {
-    position: relative;
-  }
-
   &__contact-label {
     padding-left: 22px;
+  }
+
+  &__contact-wrapper {
+    position: relative;
+    margin: 8px 0 11px;
   }
 
   &__contact-field {
     width: 100%;
     font-size: 16px;
     font-weight: 700;
-    margin: 8px 0 11px;
     padding: 20px;
     border: none;
     color: #000000;
     background-color: @form-color;
+    font-family: "PT Sans", sans-serif;
 
     &::placeholder {
       color: #000000;
+    }
+
+    &:hover {
+      background-color: #e5e5e5;
+    }
+
+    &:focus {
+      background-color: #ffffff;
+      border: 5px solid #e5e5e5;
+      padding: 15px;
     }
   }
 
   &__contact-icon {
     position: absolute;
-    top: 33px;
+    top: 0;
     right: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 58px;
-    height: 58px;
+    height: 60px;
     background-color: #e6e6e6;
 
     &--phone {
@@ -138,6 +160,7 @@
     font-size: 18px;
     font-weight: 700;
     text-transform: none;
+    cursor: pointer;
 
     &::before {
       content: "";
@@ -162,9 +185,13 @@
       background-color: #000000;
     }
 
-    /*&:checked + ::after {
-      display: block;
-    }*/
+    &:hover::before {
+      background-color: #e5e5e5;
+    }
+
+    &:active::before {
+      background-color: #d5d5d5;
+    }
   }
 
   &__visit {
@@ -187,6 +214,7 @@
     font-size: 18px;
     font-weight: 700;
     text-transform: none;
+    cursor: pointer;
 
     &::before {
       content: "";
@@ -197,6 +225,14 @@
       border-radius: 5px;
       margin-right: 23px;
       background-color: @form-color;
+    }
+
+    &:hover::before {
+      background-color: #e5e5e5;
+    }
+
+    &:active::before {
+      background-color: #d5d5d5;
     }
   }
 
@@ -213,6 +249,7 @@
     border: none;
     padding: 20px;
     background-color: @form-color;
+    font-family: "PT Sans", sans-serif;
     &::placeholder {
       color: #000000;
     }
@@ -226,10 +263,20 @@
     font-weight: 700;
     text-transform: uppercase;
     border: none;
+    cursor: pointer;
     padding: 16px 30px;
     margin: 27px 0 44px;
     color: #ffffff;
     background-color: @base-color;
+
+    &:hover {
+      background-color: @hover-color;
+    }
+
+    &:active {
+      color: @text-active-color;
+      background-color: @active-color;
+    }
   }
 
   &__emotion-required {
@@ -308,14 +355,7 @@
       letter-spacing: 0.002em;
       margin-bottom: 24px;
 
-      &::before {
-        content: "";
-        display: block;
-        width: 125px;
-        height: 1px;
-        background-color: #dbdbdb;
-      }
-
+      &::before,
       &::after {
         content: "";
         display: block;
@@ -327,10 +367,6 @@
 
     &__contact-item {
       margin-bottom: 11px;
-    }
-
-    &__contact-field {
-      margin: 8px 0 11px;
     }
 
     &__impression {
@@ -412,14 +448,7 @@
       align-items: center;
       font-size: 21px;
 
-      &::before {
-        content: "";
-        display: block;
-        width: 125px;
-        height: 1px;
-        background-color: #dbdbdb;
-      }
-
+      &::before,
       &::after {
         content: "";
         display: block;
@@ -473,10 +502,8 @@
     }
 
     &__contact-title {
-      &:before {
-        width: 280px;
-      }
-      &:after {
+      &::before,
+      &::after {
         width: 280px;
       }
     }
@@ -502,7 +529,6 @@
     }
 
     &__contact-label {
-      /*min-width: 100px;*/
       padding: 0;
       margin-right: 20px;
 
@@ -511,8 +537,12 @@
       }
     }
 
-    &__contact-icon {
-      top: 8px;
+    &__contact-wrapper {
+      width: 316px;
+    }
+
+    &__contact-field {
+      width: 100%;
     }
 
     &__impression {
@@ -534,8 +564,8 @@
     }
 
     &__visit-title {
-      &:before,
-      &:after {
+      &::before,
+      &::after {
         width: 280px;
       }
     }
@@ -552,6 +582,13 @@
 
     &__visit-label {
       width: 100%;
+    }
+
+    &__emotion-title {
+      &::before,
+      &::after {
+        width: 280px;
+      }
     }
 
     &__emotion-btn {
