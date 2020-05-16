@@ -41,14 +41,26 @@
     width: 100%;
     font-size: 17px;
     font-weight: 700;
-    padding: 20px;
+    letter-spacing: 0.03em;
+    padding: 19px 20px;
     margin-left: 20px;
     border: none;
     color: #000000;
     background-color: @form-color;
+    font-family: "PT Sans", sans-serif;
 
     &::placeholder {
       color: #000000;
+    }
+
+    &:hover {
+      background-color: #e5e5e5;
+    }
+
+    &:focus {
+      background-color: #ffffff;
+      border: 5px solid #e5e5e5;
+      padding: 15px;
     }
   }
 
@@ -67,32 +79,43 @@
     padding: 0;
   }
 
-  &__contact-item {
-    position: relative;
-  }
-
   &__contact-label {
     padding-left: 22px;
   }
 
+  &__contact-wrapper {
+    position: relative;
+    margin: 8px 0 11px;
+  }
+
   &__contact-field {
     width: 100%;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 700;
-    margin: 8px 0 11px;
-    padding: 20px;
+    padding: 18px 23px;
     border: none;
     color: #000000;
     background-color: @form-color;
+    font-family: "PT Sans", sans-serif;
 
     &::placeholder {
       color: #000000;
+    }
+
+    &:hover {
+      background-color: #e5e5e5;
+    }
+
+    &:focus {
+      background-color: #ffffff;
+      border: 5px solid #e5e5e5;
+      padding: 15px;
     }
   }
 
   &__contact-icon {
     position: absolute;
-    top: 33px;
+    top: 0;
     right: 0;
     display: flex;
     justify-content: center;
@@ -131,28 +154,9 @@
     margin: 14px 0;
   }
 
-  &__impression-label {
-    position: relative;
-    display: flex;
-    align-items: center;
-    font-size: 18px;
-    font-weight: 700;
-    text-transform: none;
-
-    &::before {
+  &__impression-input {
+    &:checked + label::after {
       content: "";
-      position: relative;
-      display: block;
-      width: 56px;
-      height: 56px;
-      border-radius: 50px;
-      margin-right: 23px;
-      background-color: @form-color;
-    }
-
-    &::after {
-      content: "";
-      display: none;
       position: absolute;
       top: 17px;
       left: 17px;
@@ -161,10 +165,38 @@
       border-radius: 50px;
       background-color: #000000;
     }
+  }
 
-    /*&:checked + ::after {
+  &__impression-label {
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: none;
+    cursor: pointer;
+
+    &::before {
+      content: "";
       display: block;
-    }*/
+      width: 56px;
+      height: 56px;
+      border-radius: 50px;
+      margin-right: 23px;
+      background-color: @form-color;
+    }
+
+    &:hover::before {
+      background-color: #e5e5e5;
+    }
+
+    &:active::before {
+      background-color: #d5d5d5;
+    }
+
+    &:active::after {
+      background-color: #a4a4a4;
+    }
   }
 
   &__visit {
@@ -178,7 +210,22 @@
   }
 
   &__visit-item {
+    position: relative;
     margin: 16px 0 24px;
+  }
+
+  &__visit-input {
+    &:checked + label::after {
+      content: "";
+      position: absolute;
+      top: 19px;
+      left: 17px;
+      width: 25px;
+      height: 25px;
+      background-image: url(../img/icon-tick.svg);
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
   }
 
   &__visit-label {
@@ -187,6 +234,7 @@
     font-size: 18px;
     font-weight: 700;
     text-transform: none;
+    cursor: pointer;
 
     &::before {
       content: "";
@@ -197,6 +245,14 @@
       border-radius: 5px;
       margin-right: 23px;
       background-color: @form-color;
+    }
+
+    &:hover::before {
+      background-color: #e5e5e5;
+    }
+
+    &:active::before {
+      background-color: #d5d5d5;
     }
   }
 
@@ -213,6 +269,8 @@
     border: none;
     padding: 20px;
     background-color: @form-color;
+    font-family: "PT Sans", sans-serif;
+    
     &::placeholder {
       color: #000000;
     }
@@ -226,10 +284,20 @@
     font-weight: 700;
     text-transform: uppercase;
     border: none;
+    cursor: pointer;
     padding: 16px 30px;
     margin: 27px 0 44px;
     color: #ffffff;
     background-color: @base-color;
+
+    &:hover {
+      background-color: @hover-color;
+    }
+
+    &:active {
+      color: @text-active-color;
+      background-color: @active-color;
+    }
   }
 
   &__emotion-required {
@@ -308,14 +376,7 @@
       letter-spacing: 0.002em;
       margin-bottom: 24px;
 
-      &::before {
-        content: "";
-        display: block;
-        width: 125px;
-        height: 1px;
-        background-color: #dbdbdb;
-      }
-
+      &::before,
       &::after {
         content: "";
         display: block;
@@ -327,10 +388,6 @@
 
     &__contact-item {
       margin-bottom: 11px;
-    }
-
-    &__contact-field {
-      margin: 8px 0 11px;
     }
 
     &__impression {
@@ -412,14 +469,7 @@
       align-items: center;
       font-size: 21px;
 
-      &::before {
-        content: "";
-        display: block;
-        width: 125px;
-        height: 1px;
-        background-color: #dbdbdb;
-      }
-
+      &::before,
       &::after {
         content: "";
         display: block;
@@ -473,10 +523,8 @@
     }
 
     &__contact-title {
-      &:before {
-        width: 280px;
-      }
-      &:after {
+      &::before,
+      &::after {
         width: 280px;
       }
     }
@@ -502,7 +550,6 @@
     }
 
     &__contact-label {
-      /*min-width: 100px;*/
       padding: 0;
       margin-right: 20px;
 
@@ -511,8 +558,12 @@
       }
     }
 
-    &__contact-icon {
-      top: 8px;
+    &__contact-wrapper {
+      width: 316px;
+    }
+
+    &__contact-field {
+      width: 100%;
     }
 
     &__impression {
@@ -534,8 +585,8 @@
     }
 
     &__visit-title {
-      &:before,
-      &:after {
+      &::before,
+      &::after {
         width: 280px;
       }
     }
@@ -547,11 +598,23 @@
     }
 
     &__visit-item {
-      margin-right: 20px;
+      width: auto;
+      margin-left: 0;
     }
 
     &__visit-label {
       width: 100%;
+    }
+
+    &__emotion-title {
+      &::before,
+      &::after {
+        width: 280px;
+      }
+    }
+
+    &__emotion-place {
+      padding: 19px 21px;
     }
 
     &__emotion-btn {
