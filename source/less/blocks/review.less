@@ -165,6 +165,10 @@
       border-radius: 50px;
       background-color: #000000;
     }
+
+    &:checked + label:active::after {
+      background-color: #a4a4a4;
+    }
   }
 
   &__impression-label {
@@ -193,10 +197,6 @@
     &:active::before {
       background-color: #d5d5d5;
     }
-
-    &:active::after {
-      background-color: #a4a4a4;
-    }
   }
 
   &__visit {
@@ -222,7 +222,7 @@
       left: 17px;
       width: 25px;
       height: 25px;
-      background-image: url(../img/icon-tick.svg);
+      background-image: url("../img/icon-tick.svg");
       background-repeat: no-repeat;
       background-position: 0 0;
     }
@@ -270,7 +270,7 @@
     padding: 20px;
     background-color: @form-color;
     font-family: "PT Sans", sans-serif;
-    
+
     &::placeholder {
       color: #000000;
     }

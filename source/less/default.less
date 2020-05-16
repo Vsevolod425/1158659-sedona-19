@@ -1,7 +1,7 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 body {
@@ -13,6 +13,7 @@ body {
   text-transform: uppercase;
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 h2 {
@@ -57,5 +58,6 @@ input[type="radio"].visually-hidden {
 @media (min-width: @desktop-width) {
   .container {
     max-width: 1200px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
   }
 }
