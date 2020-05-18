@@ -38,15 +38,11 @@
     z-index: 5;
     transform: translate(-50%);
   }
-
-  &__triangle svg {
-    display: block;
-  }
 }
 
 @media (min-width: @tablet-width) {
   .intro {
-    min-height: 520px;
+    min-height: 528px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-position: 50% 102%;
 
@@ -63,23 +59,15 @@
     }
 
     &__img {
-      width: 460px;
-      height: 350px;
-      margin-top: -18px;
-
-      &--photo {
-        width: 458px;
-        height: 78px;
-      }
-
-      &--form {
-        width: 458px;
-        height: 78px;
-      }
+      margin-top: -25px;
     }
 
     &__triangle {
-      display: none;
+      bottom: 1.9%;
+
+      &--min {
+        bottom: 5%;
+      }
     }
   }
 }
@@ -99,15 +87,13 @@
 
     &__img {
       margin-top: -13px;
+    }
 
-      &--photo {
-        width: 461px;
-        height: 80px;
-      }
+    &__triangle {
+      bottom: 0;
 
-      &--form {
-        width: 461px;
-        height: 80px;
+      &--min {
+        bottom: 1%;
       }
     }
   }
