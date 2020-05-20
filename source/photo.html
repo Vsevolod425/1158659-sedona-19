@@ -29,7 +29,11 @@
       </nav>
       <div class="page-header__content">
         <a href="index.html" class="page-header__logo">
-          <img src="img/logo-sedona-mobile.svg" alt="" class="page-header__logo-img" width="102" height="82">
+          <picture>
+            <source media= "(min-width: 1280px)" srcset= "img/logo-sedona-desktop.svg">
+            <source media= "(min-width: 768px)" srcset= "img/logo-sedona-tablet.svg">
+            <img class="page-header__logo-img" src="img/logo-sedona-mobile.svg" width="102" height="82" alt="Логотип">
+          </picture>
         </a>
         <button type="button" class="page-header__toggle-open">
           <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982" xml:space="preserve">
@@ -46,12 +50,13 @@
     <main class="page-main">
 
       <section class="intro intro--photo">
-        <img class="intro__img intro__img--photo" src="img/text-sedona.svg" alt="">
-        <div class="intro__triangle intro__triangle--min">
-          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="320px" height="26.111px" viewBox="440.469 30.889 320 26.111" enable-background="new 440.469 30.889 320 26.111" xml:space="preserve">
-            <polygon fill="#FFFFFF" points="760.469,57 760.469,30.889 599.955,57"/>
-            <polygon fill="#FFFFFF" points="440.469,57 599.955,57 440.469,31.056"/>
-          </svg>
+        <img class="intro__img intro__img--photo" src="img/text-sedona.svg" alt="Добро пожаловать в Седону">
+        <div>
+          <picture>
+            <source media= "(min-width: 1280px)" srcset= "img/bg-intro-triangle-desktop.svg">
+            <source media= "(min-width: 768px)" srcset= "img/bg-intro-triangle-tablet.svg">
+            <img class="intro__triangle intro__triangle--min" src="img/bg-intro-triangle-mobile.svg" alt="">
+          </picture>
         </div>
       </section>
 
@@ -62,7 +67,7 @@
         </div>
         <ul class="gallery__list">
           <li class="gallery__item gallery__item--first">
-            <img class="gallery__img" src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="">
+            <div class="gallery__img gallery__img--first"></div>
             <div class="gallery__content">
               <div class="gallery__wrapper">
                 <h3 class="gallery__name">Неродные просторы</h3>
@@ -80,8 +85,8 @@
               <span class="gallery__like-amount">1350</span></p>
             </div>
           </li>
-          <li class="gallery__item">
-            <img class="gallery__img gallery__img--min" src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="">
+          <li class="gallery__item gallery__item--min">
+            <div class="gallery__img gallery__img--second"></div>
             <div class="gallery__content">
               <div class="gallery__wrapper">
                 <h3 class="gallery__name">Местная растительность</h3>
@@ -99,8 +104,8 @@
               <span class="gallery__like-amount">143</span></p>
             </div>
           </li>
-          <li class="gallery__item gallery__item--third">
-            <img class="gallery__img gallery__img--min" src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="">
+          <li class="gallery__item gallery__item--third gallery__item--min">
+            <div class="gallery__img gallery__img--third"></div>
             <div class="gallery__content">
               <div class="gallery__wrapper">
                 <h3 class="gallery__name">Дорога на север</h3>
@@ -118,8 +123,8 @@
               <span class="gallery__like-amount">96</span></p>
             </div>
           </li>
-          <li class="gallery__item">
-            <img class="gallery__img gallery__img--min" src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="">
+          <li class="gallery__item gallery__item--min">
+            <div class="gallery__img gallery__img--fourth"></div>
             <div class="gallery__content">
               <div class="gallery__wrapper">
                 <h3 class="gallery__name">Мост дьявола</h3>
@@ -146,7 +151,7 @@
           <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         </div>
         <div class="video__img">
-          <img src="img/video-mobile@1x.jpg" alt="">
+          <div class="video__play"></div>
         </div>
         <div class="video__menu">
           <div class="video__menu-icon video__menu--replay">

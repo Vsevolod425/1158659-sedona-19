@@ -29,7 +29,11 @@
       </nav>
       <div class="page-header__content">
         <a href="#" class="page-header__logo">
-          <img src="img/logo-sedona-mobile.svg" alt="" class="page-header__logo-img" width="102" height="82">
+          <picture>
+            <source media= "(min-width: 1280px)" srcset= "img/logo-sedona-desktop.svg">
+            <source media= "(min-width: 768px)" srcset= "img/logo-sedona-tablet.svg">
+            <img class="page-header__logo-img" src="img/logo-sedona-mobile.svg" alt="Логотип">
+          </picture>
         </a>
         <button type="button" class="page-header__toggle-open">
           <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982" xml:space="preserve">
@@ -48,12 +52,13 @@
       <h1 class="visually_hidden">Welcome to Sedona</h1>
 
       <section class="intro">
-        <img class="intro__img" src="img/text-sedona-index.svg" alt="">
-        <div class="intro__triangle">
-          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="320px" height="26.111px" viewBox="440.469 30.889 320 26.111" enable-background="new 440.469 30.889 320 26.111" xml:space="preserve">
-            <polygon fill="#FFFFFF" points="760.469,57 760.469,30.889 599.955,57"/>
-            <polygon fill="#FFFFFF" points="440.469,57 599.955,57 440.469,31.056"/>
-          </svg>
+        <img class="intro__img" src="img/text-sedona-index.svg" alt="Добро пожаловать в Седону">
+        <div>
+          <picture>
+            <source media= "(min-width: 1280px)" srcset= "img/bg-intro-triangle-desktop.svg">
+            <source media= "(min-width: 768px)" srcset= "img/bg-intro-triangle-tablet.svg">
+            <img class="intro__triangle" src="img/bg-intro-triangle-mobile.svg" alt="">
+          </picture>
         </div>
       </section>
 
@@ -64,18 +69,16 @@
 
       <section class="reason">
         <ol class="reason__list">
-          <li class="reason__item reason__item--mod">
+          <li class="reason__item reason__item--mod reason__item--first">
             <div class="reason__header">
               <h2 class="reason__title">Настоящий городок</h2>
               <p class="reason__description-number">— №1 —</p>
               <p class="reason__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
-            <img class="reason__img" src="img/main-city-mobile@1x.jpg" alt="">
-            <div class="reason__triangle">
-              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="320px" height="37px" viewBox="0 12.452 320 37" enable-background="new 0 12.452 320 37" xml:space="preserve">
-                <polygon fill="#ffffff" points="320,12.452 0,12.452 0,34.175 160,49.452 320,34.175 "/>
-              </svg>
+            <div>
+              <img class="reason__triangle" src="img/bg-triangle.svg" alt="">
             </div>
+            <div class="reason__pic reason__pic--first"></div>
             <ul class="advantages">
               <li class="advantages__item">
                 <h3 class="advantages__title">Жилье</h3>
@@ -125,13 +128,13 @@
               </li>
             </ul>
           </li>
-          <li class="reason__item reason__item--mod reason__item--reverse">
+          <li class="reason__item reason__item--mod reason__item--second reason__item--reverse">
             <div class="reason__header reason__header--height">
               <h2 class="reason__title">Там есть мост дьявола</h2>
               <p class="reason__description-number">— №2 —</p>
               <p class="reason__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
-            <img class="reason__img" src="img/main-bridge-mobile@1x.jpg" alt="">
+            <div class="reason__pic reason__pic--second"></div>
           </li>
           <li class="reason__item reason__item--color">
             <h2 class="reason__title">Небольшая площадь</h2>
