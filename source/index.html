@@ -53,11 +53,11 @@
 
       <section class="intro">
         <img class="intro__img" src="img/text-sedona-index.svg" alt="Добро пожаловать в Седону">
-        <div class="intro__triangle">
+        <div>
           <picture>
             <source media= "(min-width: 1280px)" srcset= "img/bg-intro-triangle-desktop.svg">
             <source media= "(min-width: 768px)" srcset= "img/bg-intro-triangle-tablet.svg">
-            <img src="img/bg-intro-triangle-mobile.svg" alt="">
+            <img class="intro__triangle" src="img/bg-intro-triangle-mobile.svg" alt="">
           </picture>
         </div>
       </section>
@@ -69,22 +69,16 @@
 
       <section class="reason">
         <ol class="reason__list">
-          <li class="reason__item reason__item--mod">
+          <li class="reason__item reason__item--mod reason__item--first">
             <div class="reason__header">
               <h2 class="reason__title">Настоящий городок</h2>
               <p class="reason__description-number">— №1 —</p>
               <p class="reason__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
-            <picture>
-              <source media= "(min-width: 1280px)" srcset= "img/main-city-desktop@1x.jpg, img/main-city-desktop@2x.jpg">
-              <source media= "(min-width: 768px)" srcset= "img/main-city-tablet@1x.jpg, img/main-city-tablet@2x.jpg">
-              <img class="reason__img" src="img/main-city-mobile@1x.jpg" srcset= "img/main-city-mobile@2x.jpg" alt="Настоящий городок">
-            </picture>
-            <div class="reason__triangle">
-              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="320px" height="37px" viewBox="0 12.452 320 37" enable-background="new 0 12.452 320 37" xml:space="preserve">
-                <polygon fill="#ffffff" points="320,12.452 0,12.452 0,34.175 160,49.452 320,34.175 "/>
-              </svg>
+            <div>
+              <img class="reason__triangle" src="img/bg-triangle.svg" alt="">
             </div>
+            <div class="reason__pic reason__pic--first"></div>
             <ul class="advantages">
               <li class="advantages__item">
                 <h3 class="advantages__title">Жилье</h3>
@@ -134,17 +128,13 @@
               </li>
             </ul>
           </li>
-          <li class="reason__item reason__item--mod reason__item--reverse">
+          <li class="reason__item reason__item--mod reason__item--second reason__item--reverse">
             <div class="reason__header reason__header--height">
               <h2 class="reason__title">Там есть мост дьявола</h2>
               <p class="reason__description-number">— №2 —</p>
               <p class="reason__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
-            <picture>
-              <source media= "(min-width: 1280px)" srcset= "img/main-bridge-desktop@1x.jpg, img/main-bridge-desktop@2x.jpg">
-              <source media= "(min-width: 768px)" srcset= "img/main-bridge-tablet@1x.jpg, img/main-bridge-tablet@2x.jpg">
-              <img class="reason__img" src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg" alt="Мост Дьявола">
-            </picture>
+            <div class="reason__pic reason__pic--second"></div>
           </li>
           <li class="reason__item reason__item--color">
             <h2 class="reason__title">Небольшая площадь</h2>
