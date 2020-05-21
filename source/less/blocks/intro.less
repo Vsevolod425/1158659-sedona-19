@@ -1,10 +1,10 @@
 .intro {
+  min-height: 390px;
   position: relative;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 0;
-  min-height: 390px;
   display: flex;
   align-items: center;
 
@@ -13,14 +13,17 @@
   }
 
   &__img {
+    width: 88%;
     margin: 0 auto;
     margin-top: 5px;
 
     &--photo {
+      width: 72%;
       margin-top: -15px;
     }
 
     &--form {
+      width: 72%;
       margin-top: -15px;
     }
   }
@@ -47,7 +50,7 @@
 
 @media (min-width: @tablet-width) {
   .intro {
-    min-height: 528px;
+    min-height: 518px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-position: 75% 0;
 
@@ -56,23 +59,24 @@
     }
 
     &--photo {
-      min-height: 295px;
+      min-height: 290px;
     }
 
     &--form {
-      min-height: 295px;
+      min-height: 290px;
     }
 
     &__img {
-      margin-top: -25px;
+      width: 60%;
+      margin-top: -28px;
     }
 
     &__triangle {
       bottom: 0;
 
-      &--min {
-        bottom: 5%;
-      }
+      /*&--min {
+        bottom: 2%;
+      }*/
     }
   }
 }
@@ -87,23 +91,24 @@
     }
 
     &--photo {
-      min-height: 305px;
+      min-height: 300px;
     }
 
     &--form {
-      min-height: 305px;
+      min-height: 304px;
     }
 
     &__img {
-      margin-top: -13px;
+      width: 38%;
+      margin-top: -19px;
     }
 
     &__triangle {
-      bottom: 0;
+      bottom: -0.2%;
 
-      &--min {
+      /*&--min {
         bottom: 1%;
-      }
+      }*/
     }
   }
 }
