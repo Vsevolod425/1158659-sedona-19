@@ -1,12 +1,12 @@
 .reason {
   &__header {
     position: relative;
-    padding: 56px 20px 20px;
+    padding: 56px 20px 40px;
     background-color: @base-color;
     color: #ffffff;
 
     &--height {
-      padding: 38px 20px 20px;
+      padding: 38px 20px 39px;
       margin-top: 0;
     }
   }
@@ -18,7 +18,7 @@
   }
 
   &__item {
-    padding: 27px 31px;
+    padding: 27px 31px 28px;
 
     &--mod {
       position: relative;
@@ -55,6 +55,7 @@
   }
 
   &__title {
+    letter-spacing: 0.01em;
     margin: 0;
   }
 
@@ -70,7 +71,7 @@
   &__triangle {
     width: 100%;
     position: absolute;
-    top: 0;
+    top: -2.3%;
     left: 50%;
     z-index: 5;
     transform: translate(-50%);
@@ -106,8 +107,10 @@
     }
 
     &__pic {
+      width: 66.5%;
+      min-height: 256px;
+
       &--first {
-        width: 67%;
         background-image: url("../img/main-city-tablet@1x.jpg");
 
         @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
@@ -116,7 +119,6 @@
       }
 
       &--second {
-        width: 67%;
         background-image: url("../img/main-bridge-tablet@1x.jpg");
 
         @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
@@ -130,13 +132,14 @@
     }
 
     &__header {
-      width: 33%;
-      height: auto;
-      padding: 46px 44px 43px;
+      width: 33.5%;
+      min-height: auto;
+      padding: 45px 44px 43px;
     }
 
     &__title {
       font-size: 21px;
+      padding: 0 8px;
     }
 
     &__description-number {
@@ -188,7 +191,7 @@
     }
 
     &__title {
-      width: 156px;
+      width: 169px;
       margin: 0 auto;
     }
   }
