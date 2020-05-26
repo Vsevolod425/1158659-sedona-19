@@ -73,6 +73,12 @@
     margin-bottom: 47px;
     background-color: #f2f2f2;
     fill: #5c6870;
+  }
+
+  &__menu-icon {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
 
     &--replay {
       margin-right: auto;
@@ -81,12 +87,6 @@
     &--subtitles {
       margin-right: 31px;
     }
-  }
-
-  &__menu-icon {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
 
     &:hover {
       fill: #333333;
@@ -94,6 +94,10 @@
 
     &:active {
       fill: #b8b8b8;
+    }
+
+    &:focus {
+      fill: #333333;
     }
   }
 }
@@ -135,19 +139,23 @@
       padding: 0 40px 0 34px;
       fill: #ffffff;
       background-color: rgba(0, 0, 0, 0.6);
-
-      &--subtitles {
-        margin-right: 30px;
-      }
     }
 
     &__menu-icon {
+      &--subtitles {
+        margin-right: 30px;
+      }
+
       &:hover {
         fill: #c2c2c2;
       }
 
       &:active {
         fill: #949494;
+      }
+
+      &:focus {
+        fill: #c2c2c2;
       }
     }
 
@@ -176,7 +184,7 @@
     margin-top: 6px;
 
     &__wrapper {
-      padding: 55px 190px;
+      padding: 54px 190px 55px;
     }
 
     &__img {
@@ -193,8 +201,9 @@
     }
 
     &__menu {
-      min-height: 95px;
       padding-right: 43px;
+      padding-top: 25px;
+      padding-bottom: 25px;
     }
 
     &__time {

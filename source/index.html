@@ -3,7 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsans.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/OpenSans-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/OpenSans-Regular.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/OpenSans-Bold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/OpenSans-Bold.woff" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
   <title>Sedona</title>
 </head>
@@ -38,7 +45,7 @@
             <img class="page-header__logo-img" src="img/logo-sedona-mobile.svg" alt="Логотип">
           </picture>
         </a>
-        <button type="button" class="page-header__toggle-open">
+        <button type="button" class="page-header__toggle-open visually_hidden">
           <svg width="23" height="21">
             <use xlink:href="#icon-menu"></use>
           </svg>
@@ -52,13 +59,11 @@
 
       <section class="intro">
         <img class="intro__img" src="img/text-sedona-index.svg" alt="Добро пожаловать в Седону">
-        <div>
           <picture>
             <source media="(min-width: 1280px)" srcset="img/bg-intro-triangle-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/bg-intro-triangle-tablet.svg">
             <img class="intro__triangle" src="img/bg-intro-triangle-mobile.svg" alt="">
           </picture>
-        </div>
       </section>
 
       <section class="causes">
@@ -74,9 +79,7 @@
               <p class="reason__description-number">— №1 —</p>
               <p class="reason__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
-            <div>
-              <img class="reason__triangle" src="img/bg-triangle.svg" alt="">
-            </div>
+            <img class="reason__triangle" src="img/bg-triangle.svg" alt="">
             <div class="reason__pic reason__pic--first"></div>
             <ul class="advantages">
               <li class="advantages__item">
@@ -130,15 +133,13 @@
           <h2 class="find__title">Заинтересовались?</h2>
           <p class="find__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
         </div>
-        <a href="find.html" class="find__btn">Найти гостиницу</a>
+        <a href="find.html" class="find__btn btn">Найти гостиницу</a>
         <iframe class="find__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3380999.584046184!2d-114.17326330130864!3d34.15254813348601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b08ebcb4c186b%3A0x423927b17fc1cd71!2z0JDRgNC40LfQvtC90LAsINCh0KjQkA!5e0!3m2!1sru!2sru!4v1588625850833!5m2!1sru!2sru" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       </section>
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__hashtag hashtag">
-        <p class="hashtag__text">#VISITSEDONA</p>
-      </div>
+      <p class="page-footer__hashtag-text">#VISITSEDONA</p>
       <ul class="page-footer__social social">
         <li class="social__item">
           <a href="https://vk.com/htmlacademy" class="social__link social__link--twitter">

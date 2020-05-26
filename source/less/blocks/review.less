@@ -48,7 +48,7 @@
     border: 5px solid #f2f2f2;
     color: #000000;
     background-color: @form-color;
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", "Open Sans", sans-serif;
 
     &::placeholder {
       color: #000000;
@@ -102,7 +102,7 @@
     border: 5px solid #f2f2f2;
     color: #000000;
     background-color: @form-color;
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", "Open Sans", sans-serif;
 
     &::placeholder {
       color: #000000;
@@ -164,7 +164,6 @@
     &:checked + label::after {
       content: "";
       position: absolute;
-      top: 17px;
       left: 17px;
       width: 22px;
       height: 22px;
@@ -189,7 +188,7 @@
     &::before {
       content: "";
       display: block;
-      width: 56px;
+      min-width: 56px;
       height: 56px;
       border-radius: 50px;
       margin-right: 23px;
@@ -202,6 +201,10 @@
 
     &:active::before {
       background-color: #d5d5d5;
+    }
+
+    &:focus::before {
+      background-color: #e5e5e5;
     }
   }
 
@@ -217,7 +220,7 @@
   }
 
   &__visit-item {
-    position: relative;
+    /*position: relative;*/
     margin: 16px 0 24px;
   }
 
@@ -236,6 +239,7 @@
   }
 
   &__visit-label {
+    position: relative;
     display: flex;
     align-items: center;
     font-size: 18px;
@@ -247,7 +251,7 @@
       content: "";
       position: relative;
       display: block;
-      width: 56px;
+      min-width: 56px;
       height: 56px;
       border-radius: 5px;
       margin-right: 23px;
@@ -260,6 +264,10 @@
 
     &:active::before {
       background-color: #d5d5d5;
+    }
+
+    &:focus::before {
+      background-color: #e5e5e5;
     }
 
     &:active::after {
@@ -285,7 +293,7 @@
     border: none;
     padding: 19px;
     background-color: @form-color;
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", "Open Sans", sans-serif;
 
     &::placeholder {
       color: #000000;
@@ -293,27 +301,12 @@
   }
 
   &__emotion-btn {
-    display: block;
     width: 280px;
     height: 58px;
-    font-size: 19px;
-    font-weight: 700;
-    text-transform: uppercase;
     border: none;
     cursor: pointer;
-    padding: 16px 30px;
+    padding: 15px 42px 15px 30px;
     margin: 27px 0 44px;
-    color: #ffffff;
-    background-color: @base-color;
-
-    &:hover {
-      background-color: @hover-color;
-    }
-
-    &:active {
-      color: @text-active-color;
-      background-color: @active-color;
-    }
   }
 
   &__emotion-required {
@@ -620,17 +613,30 @@
 
     &__visit-list {
       padding: 0;
-      justify-content: space-between;
-      flex-wrap: nowrap;
+      justify-content: flex-start;
     }
 
     &__visit-item {
-      width: auto;
-      margin-left: 0;
-    }
+      display: flex;
+      flex-basis: 203px;
+      margin: 23px 49px 10px 0;
 
-    &__visit-label {
-      width: 100%;
+      &:nth-of-type(4n + 1) {
+        margin-right: 58px;
+      }
+
+      &:nth-of-type(4n + 2) {
+        margin-right: 56px;
+      }
+
+      &:nth-of-type(4n + 3) {
+        margin-right: 31px;
+      }
+
+      &&:nth-of-type(4n + 4) {
+        flex-basis: 203px;
+        margin-right: 0;
+      }
     }
 
     &__emotion-title {
