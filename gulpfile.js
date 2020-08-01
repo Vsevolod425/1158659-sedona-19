@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 var gulp = require("gulp");
 var plumber = require("gulp-plumber");
@@ -61,7 +61,8 @@ gulp.task("html", function () {
     .pipe(posthtml([
       include()
     ]))
-    .pipe(gulp.dest("build"));
+    .pipe(gulp.dest("build"))
+    .pipe(server.stream());
 });
 
 gulp.task("copy", function () {
